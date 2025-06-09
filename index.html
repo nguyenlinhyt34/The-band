@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div>
+<div>
 <!-- Header -->
         <div id="header">
             <ul id="nav">
@@ -30,29 +30,26 @@
                     </ul>
                 </li>
             </ul>
-<!-- Biểu tượng tìm kiếm -->
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
 
 <!-- Home Section -->
         <div id="Home">
             <div id="slider">
+                <img src="./assets/img/2.jpg" alt="anh" >
                 <h2 class="slider1">The Band</h2>
                 <h3 class="slider2">
                     This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
             </div>
-            <div id="slider2">
-                <h2 class="slider1">The Band</h2>
-                <h3 class="slider2">
-                    This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </h3>
-            </div>
+            
+            <script>
+                w3.slideshow("#slider", 1500);
+            </script>            
         </div>    
 <!-- Content Section -->
         <div id="Band">
                 <div class="content1">Welcome to The Band</div>
-                <div class="content3">Welcome to The Band</div>
                 <div class="content2">
                     This is a sample band website. You can add more content here.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -63,14 +60,13 @@
                 </div>
 
                 <div class="content1">Band Members</div>
-                <div class="content3">Welcome to The Band</div>
                 <div class="mem-item">
-                    <div class="mem-text">Name</div>
                     <img src="./assets/img/2.jpg" alt="anh1" class="mem1">
                     <div class="mem-text">Name</div>
                     <img src="./assets/img/2.jpg" alt="anh1" class="mem1">
                     <div class="mem-text">Name</div>
                     <img src="./assets/img/2.jpg" alt="anh1" class="mem1">
+                    <div class="mem-text">Name</div>
                 </div>
         </div>        
 <!-- Tour Section -->
@@ -85,13 +81,22 @@
                     </ul>
                 </div>
         
-        </div>   
+        </div>
+<!-- Tour Places -->
+        .`
 <!-- CONTACT Section -->     
         <div id="Contact">            
                 <div class="content1">CONTACT</div>
                 <div class="content2" style="text-align: center;">
                     Phone: +00 151515<br>
                     Email: mail@mail.com
+                    <p class="content2"><i>Fan Drop a note!</p>
+                    <input class="input" type="text" placeholder="Name" required name="Name">
+                    <input class="input" type="text" placeholder="Email" required name="Email">
+                    <input class="input" type="text" placeholder="Message" required name="Message">
+                    <br>
+                    <button class="button" type="submit">SEND</button>
+                </form>                
                 </div>
         </div>
 <!-- Footer -->
@@ -106,6 +111,6 @@
                 Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a>
             </p>
         </div>
-    </div>
+</div>
 </body>
 </html>
