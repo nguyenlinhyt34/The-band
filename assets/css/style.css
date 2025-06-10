@@ -94,14 +94,17 @@
 /* <!-- Tour Section --> */
 #Tour{
     background: #000;
+    
+    
 }
 .tour {
+    max-width: 1000px;
     font-family:"Lato", sans-serif;
     color: #f0f0f0;
     font-size: 60px;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 28%;
+    
 }
 .content li {
     background: #f0f0f0;
@@ -110,31 +113,32 @@
     padding-left: 5%;
     border-bottom: 1px solid #1b0808;
     font-size: 35px;
+    border-radius: 10px;
 }
 .sold {
     background: red;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
-    margin-left: 5%;
-    margin-bottom: 10px;
-    padding: 3px;
+    margin-left: 2%;
+    margin-bottom: 8px;
+    padding: 2px;
 }
 /* <!-- Place --> */
 .place {
-    margin:50px  27% ;
-    box-sizing: border-box;
-    justify-content: center;
+    max-width: 900px;
+    margin-top:50px;
+     margin-left: auto;
+    margin-right: auto;
 }
 .itemp {   
-    
     float: left;
-    margin-right:5%;
+    width: 30%;
+    margin: 10px;
     background: #807474;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 300px; /* hoặc % tùy ý */
 }
 .place-img{
     width: 100%;
@@ -177,7 +181,7 @@
     padding: 55px 16px;
 }
 .content2 {
-    margin: 0 10%;
+    margin: 10px 10%;
     text-align: justify;
     text-align: center;
     line-height: 1.6;
