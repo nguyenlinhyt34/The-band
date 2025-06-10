@@ -6,6 +6,7 @@
 #Tour, #About, #Contact {
     padding-top: 70px;
 }
+
 #header {
     height: 70px;
     background: rgb(18, 4, 4);
@@ -49,6 +50,8 @@
 #nav li:hover .subnav {
     display: block;
 }
+
+/* <!-- Home Section --> */
 .slider1, .slider2 {
     text-align: center;
     text-transform: uppercase;
@@ -68,6 +71,7 @@
     color: #fff;
     margin-inline: 30%;
 }
+/* <!-- Content Section --> */
 .mem-item {
     display: flex;
     justify-content: center;
@@ -87,6 +91,83 @@
     font-size: 20px;
     color: #0f0f0f;
 }
+/* <!-- Tour Section --> */
+#Tour{
+    background: #000;
+}
+.tour {
+    font-family:"Lato", sans-serif;
+    color: #f0f0f0;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.content li {
+    background: #f0f0f0;
+    color: #1b0808;
+    text-align: left;
+    padding-left: 5%;
+    border-bottom: 1px solid #1b0808;
+    font-size: 35px;
+}
+.sold {
+    background: red;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+/* <!-- Place --> */
+.place {
+    margin:50px  27% ;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.itemp {   
+    
+    float: left;
+    margin-right:5%;
+    background: #807474;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px; /* hoặc % tùy ý */
+}
+.place-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.body-p{
+    font-size: 10;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.intro{
+    font-size: 10;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* <!-- Contact Section --> */
 .content1 {
     margin-top: 20px;
     margin-bottom: 2%;
@@ -101,37 +182,6 @@
     text-align: center;
     line-height: 1.6;
     font-size: 32px;
-}
-#map {
-    margin: 0 auto;
-    width: 100%;
-    background: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.tour {
-    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 200;
-    color: #f0f0f0;
-    font-size: 60px;
-    text-align: center;
-    background: #000;
-}
-.content li {
-    background: #f0f0f0;
-    color: #1b0808;
-    text-align: left;
-    padding-left: 10%;
-    border-bottom: 1px solid #1b0808;
-}
-.sold {
-    background: red;
-    color: #fff;
-    font-size: 30px;
-    border-radius: 5px;
-    margin-left: 10%;
-    margin-bottom: 20px;
-    padding: 5px;
 }
 .input{
     width: 100%;
@@ -149,6 +199,7 @@
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    
 }
 .button:hover {
     background: #555;
@@ -159,9 +210,11 @@
     transition: background 0.3s;
 }
 
+/* <!-- Footer --> */
 #footer {
+    height: 200px;
     background-color: #9a8f8f;
-    padding-top: 10px;
+    padding-top: 50px;
     margin-top: 100px;
 }
 .icon-container {
