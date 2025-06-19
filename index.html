@@ -32,20 +32,17 @@
             </ul>
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-
 <!-- Home Section -->
         <div id="Home">
             <div id="slider">
-                <img src="./assets/img/2.jpg" alt="anh" >
+                <img src="./assets/img/2.jpg" alt="anh" class="slider-img">
                 <h2 class="slider1">The Band</h2>
                 <h3 class="slider2">
                     This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
             </div>
             
-            <script>
-                w3.slideshow("#slider", 1500);
-            </script>            
+                  
         </div>    
 <!-- Content Section -->
         <div id="Band">
@@ -72,7 +69,7 @@
 <!-- Tour Section -->
         <div id="Tour">         
                 <div class="tour">
-                    <h2 class="heading">Tour Date</h2>
+                    <h2>Tour Date</h2>
                     <p class="subheading">Remember to Band</p>
                     <ul class="content" style="list-style-type: none;">
                         <li>Septembe <span class="sold">sold out</span></li>
@@ -88,7 +85,7 @@
                     <div class="body-p">Fri 27 Nov 2016</div>
                     <div class="intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
                     <div class="button-container">
-                        <button class="button">BUY TICKET</button>
+                        <button class="btn js-buy-ticket">BUY TICKET</button>
                     </div>
                     </div>
                 </div>
@@ -99,7 +96,7 @@
                     <div class="body-p">Fri 27 Nov 2016</div>
                     <div class="intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
                     <div class="button-container">
-                        <button class="button">BUY TICKET</button>
+                        <button class="btn js-buy-ticket">BUY TICKET</button>
                     </div>
                     </div>
                 </div>
@@ -110,7 +107,7 @@
                     <div class="body-p">Fri 27 Nov 2016</div>
                     <div class="intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
                     <div class="button-container">
-                        <button class="button">BUY TICKET</button>
+                        <button class="btn js-buy-ticket">BUY TICKET</button>
                     </div>
                     </div>
                 </div>
@@ -128,7 +125,7 @@
                     <input class="input" type="text" placeholder="Email" required name="Email">
                     <input class="input" type="text" placeholder="Message" required name="Message">
                     <br>
-                    <button class="button" type="submit">SEND</button>
+                    <button class="button js-ticket" type="submit">SEND</button>
                 </form>                
                 </div>
         </div>
@@ -145,5 +142,69 @@
             </p>
         </div>
 </div>
+<!-- Modal -->
+        <div class="modal js-modal">
+            <div class="modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <div class="modal-header">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Buy Ticket
+                    </div>
+                    
+                <div class="modal-body">
+                        <label for="1" class="modal-label">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ticket $15/person
+                        </label>
+                       <input id="1" type="text" class="modal-input" placeholder="How many" >
+                       
+                       <label for="2" class="modal-label">
+                            <i class="fa-solid fa-user"></i>                          
+                            Send to
+                        </label>
+                       <input id ="2" type="text" class="modal-input" placeholder="Email" >
+
+                       <div class="modal-pay">
+                        <br><button id="buy-ticket">
+                            Pay <i class="fa-solid fa-check"></i>
+                           </button>
+                       </div>
+                <div class="modal-footer">
+                <button class="close js-modal-close">
+                    Close <i class="fa-solid fa-x"></i>
+                </button>
+                 Nedd <a href="https://github.com/nguyenlinhyt34/The-band/" > help ?</a>
+            </div>                 
+            </div>
+           </div>
+           
+                
+        </div> 
+              
+
+<!-- JavaScript -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalCloses = document.querySelectorAll('.js-modal-close')
+         
+        function ShowBuyTicket() {
+            modal.classList.add('open')
+        }
+        function hideBuyTicket() {
+            modal.classList.remove('open')
+        }
+        // nếu chỉ có 1 nút thì dùng--  modalCloses.addEventListener('click', hideBuyTicket);
+        // nếu có nhiều nút thì dùng vòng lặp
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', ShowBuyTicket)        
+            };
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click', hideBuyTicket);        
+            };
+    </script>
+    
 </body>
 </html>
