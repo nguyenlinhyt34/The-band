@@ -1,0 +1,97 @@
+@media (max-width: 740px) {
+    .slider1 {
+        font-size: 30px;
+        margin-top: -50px;
+    }
+    div#Band {
+        margin-top: -40px;
+    }
+   
+    .con2 {
+        font-size: 10px;
+        text-align: justify;
+    }
+    .tour {
+         margin-left: 10px;
+         margin-right: 10px;
+        }
+    .place{
+        margin: 0;
+        } 
+    .itemp {
+    justify-items: center;
+    margin: 5% 10% ;
+    width: 80%;
+    }
+    .left {
+    line-height: 1.5;
+}
+    .Con-content{
+        margin: 0;
+        font-size: 15px;
+    }
+    .js-ticket {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .slider2{
+        display: none;
+    }
+    .con1 {
+        font-size: 30px;
+        margin-top: 20px;
+        ;
+    }
+    #nav {
+    display: none;
+}   
+    #nav li {
+    display: none;
+}
+    .fa-nav {
+        display: block
+    
+}
+}     
+       
+
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    .slider1 {
+        font-size: 35px;
+        margin-top: -200px;
+    }
+    .slider2 {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-inline: 20%;
+    }
+    
+    .mem-item {
+        flex-direction: row;
+        text-align: left;
+    }
+    .mem1 {
+        width: 20%;
+    }
+    .con1 {
+        font-size: 50px;
+    }
+     .tour {
+         margin:0;
+         max-width: 1024px;
+        }     
+        .place {
+    margin-left: 18%;
+    margin-right: 18%;  
+    }
+    .itemp {
+    width: 28%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+}
