@@ -1,3 +1,4 @@
+/* Mobile: max-width 740px */
 @media (max-width: 740px) {
     .slider1 {
         font-size: 30px;
@@ -6,27 +7,26 @@
     div#Band {
         margin-top: -40px;
     }
-   
     .con2 {
         font-size: 10px;
         text-align: justify;
     }
     .tour {
-         margin-left: 10px;
-         margin-right: 10px;
-        }
-    .place{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .place {
         margin: 0;
-        } 
+    }
     .itemp {
-    justify-items: center;
-    margin: 5% 10% ;
-    width: 80%;
+        margin: 5% 10%;
+        width: 80%;
+        justify-items: center;
     }
     .left {
-    line-height: 1.5;
-}
-    .Con-content{
+        line-height: 1.5;
+    }
+    .Con-content {
         margin: 0;
         font-size: 15px;
     }
@@ -35,28 +35,42 @@
         width: 100%;
         text-align: center;
     }
-    .slider2{
+    .slider2 {
         display: none;
     }
     .con1 {
         font-size: 30px;
         margin-top: 20px;
-        ;
     }
-    #nav {
-    display: none;
-}   
+    /* #nav {
+        display: none;
+    } */
+     
+
     #nav li {
-    display: none;
-}
-    .fa-nav {
-            display: block;
-    
-}
-}     
-       
+        display: block !important;
+    }
+    #nav li a {
+        font-size: 25px;
+    }
+    .fa-solid.fa-bars {
+        display: block !important;
+        float: right;
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #header .fa-search{
+        display: none !important;
+    }
+ 
 
+}
 
+/* Tablet: 741px - 1023px */
 @media (min-width: 741px) and (max-width: 1023px) {
     .slider1 {
         font-size: 35px;
@@ -67,7 +81,6 @@
         margin-top: 15px;
         margin-inline: 20%;
     }
-    
     .mem-item {
         flex-direction: row;
         text-align: left;
@@ -78,20 +91,25 @@
     .con1 {
         font-size: 50px;
     }
-     .tour {
-         margin:0;
-         max-width: 1024px;
-        }     
-        .place {
-    margin-left: 18%;
-    margin-right: 18%;  
+    .tour {
+        margin: 0;
+        max-width: 1024px;
+    }
+    .place {
+        margin-left: 18%;
+        margin-right: 18%;
     }
     .itemp {
-    width: 28%;
+        width: 28%;
+    }
+    .fa-solid.fa-bars {
+        display: none !important;
     }
 }
 
-
+/* Desktop: min-width 1024px */
 @media (min-width: 1024px) {
-
+    .fa-solid.fa-bars {
+        display: none !important;
+    }
 }
